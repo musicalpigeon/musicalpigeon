@@ -1,0 +1,72 @@
+﻿#body{
+	margin:0px auto; width:900px;
+}
+
+#top {
+	background-color:white; width:900px; padding:20px 0; overflow:hidden; margin:0px auto; 
+}
+
+#wrapper {
+	width:100%; background-color:black; height:200px;
+}
+
+#title {
+	color:white; width: 500px; padding: 10px 0px 10px 10px; }
+
+#contact {
+	float:right; margin:-150px 10px 0 0;
+}
+#contact p {
+	color:white; font-size:11px; margin: 4px 10px 4px 0px;
+}
+#contact img {
+	width:24px; height:24px;
+}
+#contact ul li {
+	display:inline;
+}
+
+#topnav {
+	background-color:#333333; clear:both; width:900px
+}
+#topnav ul {
+	margin:0px; width: 100%; float:left; background-color:#333333; border-bottom:3px #cccccc solid;
+}
+#topnav ul li {
+	display:inline;
+}
+#topnav ul li a {
+	float:left; padding: 10px 20px;
+}
+#topnav a:link 		{ color:#ffffff; text-decoration:none; }
+#topnav a:visited	{ color:#ffffff; text-decoration:none; }
+#topnav a:active 	{ color:#ffffff; text-decoration:none; }
+#topnav a:hover 	{ color:#ffffff; text-decoration:none; }
+#topnav a:hover 	{ color:#ffffff; text-decoration:none; background-color:#770000; }
+#topnav a:focus 	{ color:#ffffff; text-decoration:none; }
+
+#banner img {
+	width:100%;
+}
+
+#sidebar {
+	margin-left:675px; width:150px; padding: 20px; background-color:#778899; border:1px black solid;
+}
+
+#content {
+	float:left; width:650px; padding:20px; 
+}
+#content h1 {
+	border-bottom:1px #777777 solid;
+}
+
+#footer {
+	width:100%; margin: 0px auto; background-color:#777777;
+}
+
+#footer a:link 		{ color:black; text-decoration:none; }
+#footer a:visited	{ color:black; text-decoration:none; }
+#footer a:active 	{ color:black; text-decoration:none; }
+#footer a:hover 	{ color:black; text-decoration:none; }
+#footer a:hover 	{ color:black; text-decoration:none; background-color:#770000; }
+#footer a:focus 	{ color:black; text-decoration:none; }

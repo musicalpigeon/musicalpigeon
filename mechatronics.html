@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link type="text/css" rel="stylesheet" href="css/main.css" />
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <script src="js/w3.js"></script>
+
+</head>
+
+<div w3-include-html="header.html"></div>
+
+    <!-------Begin Editable Space-------------->
+    
+    
+    <title>Mechatronics</title>
+    
+    <body>
+
+    <h1>Mechatronics Project</h1>
+    
+    <p>
+        This project was a continuation of the a project started by the graduate student Mechatronics in the previous semester. They created the basic robot, but when we received it, it could not communicate with the controller wirelessly, it could not balance itself, and it could not calculate its speed correctly.    
+    </p>
+    
+    <p>
+        I was in charge of the electrical team. I replaced batteries and power amplifiers after they broke and was chiefly responsible for software. The drive control program had severals issues that I fixed before implementing the programs that other team members wrote to balance the robot and have it communicate wirelessly with the joystick, changing code to make the programs all work together. I tested the robot at various stages to troubleshoot problems and determine additional steps required.
+    </p>
+        
+    <p>
+        The robot now can be controlled wirelessly with the Arduino joystick controller. The left stick controls the turn (up turns clockwise, down turns counterclockwise) and the right stick controls acceleration. The self balancing program can be run independently to set angles without the controllers but is also implemented into the drive control program so that the robot automatically sets to 20° in the direction of travel when the acceleration joystick is toggled and sets to 0° when the acceleration joystick is unmoved. Calculations were done to procure new motors up to specifications, but although the new motors have been purchased they have not yet been installed.
+    </p>
+        
+    <p>
+        More testing on the implementation of self balancing in the drive control program is required to guarantee performance. The I terms of the PID controller for left and right wheels started to give errors by sending NaN and were thus disabled. If I terms are desired in the future, a fix will need to be found. Tuning of the PID controllers for the drive control and the self balancing is approximate but needs to be done in full. The drive control program seems to be limited in the amount of voltage it outputs without causing shuddering in the motors (compared to the self balancing programs faster and smoother performance), so debugging needs to be done there. The new motors were purchased, but new couplings and mounts were designed but not machined and thus they have not been attached. Ways of extending the range of the wireless communication would also be beneficial.
+    </p>
+    
+    <p>
+        <a href="files/Technical%20Manual.pdf">Technical Manual</a>
+    </p>
+        
+    <center>
+        <img src="img/RobotTop.jpg", height="200" width="300">
+        <img src="img/RobotSide.jpg", height="200" width="300" >
+        <p></p>
+        <video width="240" height="320" controls><source src="vids/Balance.mp4", type="video/mp4"></video>
+        <video width="240" height="320" hspace="25px"controls><source src="vids/Donut.mp4", type="video/mp4"></video>
+    </center>
+    
+    <!-------End Editable Space-------------->
+ 
+    <div w3-include-html="footer.html"></div>
+
+    <script>
+        w3.includeHTML();
+
+    </script>
+
+</body>
+
+</html>
