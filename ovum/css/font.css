@@ -1,0 +1,22 @@
+@import url('/css/main.css');
+
+
+body{
+    font-family: "Sweden Sans", "Book Antiqua", Sweden, sans-serif;
+    background-color: #bbeaff;
+}
+
+div.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 50px;
+  margin: 0px;
+/*  float: left;*/
+  width: 1000px;
+}
+
+div.gallery img {
+  width: 300px;
+  height: auto;
+  object-fit: cover;
+}
